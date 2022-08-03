@@ -4,7 +4,7 @@ FROM alpine
 RUN apk update
 
 # install necessary packages to install stress
-RUN apk add git autoconf automake build-base
+RUN apk add git autoconf automake build-base bash
 
 # Install stress
 RUN git clone https://github.com/resurrecting-open-source-projects/stress.git && \
