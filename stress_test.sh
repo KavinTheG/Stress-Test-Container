@@ -11,7 +11,7 @@ mem_kb=$(cat /proc/meminfo | grep MemTotal | awk '{print $2}')
 mem_gb=$(bc <<<"$mem_kb * 0.000001")
 
 mem_free_kb=$(grep MemFree /proc/meminfo  | awk '{print $2}')
-mem_free_gb=$(bc <<< "$mem_free_kb * 0.00001")
+mem_free_gb=$(bc <<< "$mem_free_kb * 0.000001")
 
 echo "CPU Processors: $num_cpu"
 echo "Total Memory: $mem_gb"
