@@ -29,4 +29,8 @@ echo "Please enter number of process to run (Max:$max_proc)"
 
 read mem_to_stress
 
-stress -c $cores_to_stress -m $mem_to_stress
+echo "How long would you like to run this script for? (seconds)"
+
+read run_time
+
+stress -c $cores_to_stress -m $mem_to_stress -t $run_time
