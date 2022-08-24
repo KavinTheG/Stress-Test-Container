@@ -6,14 +6,14 @@ The purpose of this repository is to allow users to run a stress-test script in 
 ```
 git clone https://github.com/KavinTheG/Stress-Test-Container.git
 cd Stress-Test-Container
-docker build -t repo_name/stresstest .
+docker build -t repo_name/stress-test .
 ```
 ## Usage
 
 ### Running the Container
 The script is interactive, so the docker container must be executed with the -it addon.
 ```
-docker run -it repo_name/stresstest
+docker run -it repo_name/stress-test
 ```
 
 ![image](https://user-images.githubusercontent.com/25258108/186496422-80758e2a-85d4-47a2-9b5d-8f2f0b29b7bb.png)
