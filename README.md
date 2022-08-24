@@ -2,12 +2,20 @@
 
 The purpose of this repository is to allow users to run a stress-test script in an isolated docker container. This is an interactive script, meaning users will be prompted for the desired amount of cores, memory to be stressed. 
 
-### Installation
+## Installation
+
+### From github
 ```
 git clone https://github.com/KavinTheG/Stress-Test-Container.git
 cd Stress-Test-Container
 docker build -t repo_name/stress-test .
 ```
+
+### From dockerhub
+```
+docker pull kaving02/stress-test
+```
+
 ## Usage
 
 ### Running the Container
